@@ -1,0 +1,13 @@
+filename = 'IntegratedCrafting-1.20.1-1.1.8.jar'
+name = ' Integrated Crafting'
+side = 'both'
+
+[download]
+hash = '1e70d9be987659ecf539cc81415f0cfcafd49512cccfccf9b01f0013523722ad495e03c637ff258c5e75c56843f0329679916cf025b6eae313aa0222bc0160ea'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/qwpACdla/versions/qIe9ou2a/IntegratedCrafting-1.20.1-1.1.8.jar'
+
+[update.modrinth]
+mod-id = 'qwpACdla'
+version = 'qIe9ou2a'

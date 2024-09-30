@@ -1,0 +1,340 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mariums_soulslike_weaponry"
+	group: "5854A28DDC53BD03"
+	id: "79E605B9814D6331"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Mariums Soulslike Weaponry (MSW) is a mod that adds 6 new bosses, new structures, tons of weapons and so much more"
+				""
+				"The first boss you will be fighting is the Old Champions Remains"
+				""
+				"To find him, you will need to craft a moonstone compass. You can find moonstone just like any other ore"
+			]
+			id: "1BD28F1DC8FB8CC5"
+			tasks: [{
+				id: "33ADE7AC37232434"
+				item: "soulsweapons:boss_compass"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BD28F1DC8FB8CC5"]
+			id: "6D61C67C3AF206AE"
+			tasks: [{
+				id: "4A7EE858EB9CBED8"
+				item: {
+					Count: 1
+					id: "soulsweapons:draugr"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1BD28F1DC8FB8CC5"]
+			description: ["Crafting component used to make weapons"]
+			id: "53315CFAC1C3A653"
+			tasks: [{
+				id: "0A3072469F563EB2"
+				item: "soulsweapons:lord_soul_dark"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BD28F1DC8FB8CC5"]
+			description: ["Used to make the Darkmoon Longbow"]
+			id: "21C9E39B94E0A8CE"
+			tasks: [{
+				id: "234D8940DBD20151"
+				item: "soulsweapons:essence_of_eventide"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			description: ["Smelt some soul sand to get some lost souls"]
+			id: "4FEEB4970EBD1AB2"
+			tasks: [{
+				id: "49F886E00B56AE2F"
+				item: "soulsweapons:lost_soul"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4FEEB4970EBD1AB2"]
+			id: "396C7D85C8741F47"
+			tasks: [{
+				id: "274BC5D482C5C993"
+				item: "soulsweapons:iron_skull"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["396C7D85C8741F47"]
+			description: ["Use a lost soul on this to spawn the Returning Night, the next boss!"]
+			id: "64D359A21150F8A1"
+			tasks: [{
+				id: "34B1F79E21705EE0"
+				item: "soulsweapons:altar_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64D359A21150F8A1"]
+			id: "7AA5C8842089D577"
+			tasks: [{
+				id: "2B5230C9A0A3C954"
+				item: "soulsweapons:lord_soul_rose"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["64D359A21150F8A1"]
+			id: "646076508005F30F"
+			tasks: [{
+				id: "7648EAF57A71059A"
+				item: "soulsweapons:arkenstone"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["64D359A21150F8A1"]
+			id: "710D27021A49A2BB"
+			tasks: [{
+				id: "0F0A5D91E7FC9538"
+				item: "soulsweapons:soul_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["64D359A21150F8A1"]
+			id: "7D5D2B480D90EEF9"
+			tasks: [{
+				id: "0374E11591DB5AB5"
+				item: {
+					Count: 1
+					id: "soulsweapons:nightfall"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			description: ["The decaying kingdom is where the Decaying King boss is found"]
+			id: "3246E3D8DB5EC7B5"
+			tasks: [{
+				id: "2D80E64203604FFF"
+				structure: "soulsweapons:decaying_kingdom"
+				type: "structure"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3246E3D8DB5EC7B5"]
+			id: "7F5B103F4F128739"
+			tasks: [{
+				id: "02C67170B50128DB"
+				item: {
+					Count: 1
+					id: "soulsweapons:darkin_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3246E3D8DB5EC7B5"]
+			id: "0E51E26A6DE1D332"
+			tasks: [{
+				id: "73E8A5B83414B3D2"
+				item: "soulsweapons:lord_soul_red"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3246E3D8DB5EC7B5"]
+			id: "5C7362AECD0721DD"
+			tasks: [{
+				id: "1F8DEA06A6A25E15"
+				item: "soulsweapons:withered_demon_heart"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["64D359A21150F8A1"]
+			description: ["If you use the essence of eventide on the altar it will spawn the fallen icon!"]
+			id: "2043ADC53938450A"
+			tasks: [{
+				id: "638675AC38B82802"
+				item: "soulsweapons:essence_of_eventide"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2043ADC53938450A"]
+			id: "562CABEADC44C748"
+			tasks: [{
+				id: "5F5CD5678F9B8E67"
+				item: {
+					Count: 1
+					id: "soulsweapons:moonlight_greatsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2043ADC53938450A"]
+			id: "7644A9614F688128"
+			tasks: [{
+				id: "671A63CE9D3061CB"
+				item: "soulsweapons:essence_of_luminescence"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2043ADC53938450A"]
+			id: "6E4EC9A940ADFF2F"
+			tasks: [{
+				id: "2D9CB67BA521F78C"
+				item: "soulsweapons:lord_soul_white"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			description: ["This item drops from withers"]
+			id: "2A07FF8EDB5F9EDC"
+			tasks: [{
+				id: "525E33DD46525D12"
+				item: "soulsweapons:shard_of_uncertainty"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A07FF8EDB5F9EDC"]
+			description: ["Use the shard on this to spawn the Monarch of Chaos"]
+			id: "20A1FB824D447D83"
+			tasks: [{
+				id: "0617066000C8E92F"
+				item: "soulsweapons:blackstone_pedestal"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20A1FB824D447D83"]
+			id: "25E617B87BC95783"
+			tasks: [{
+				id: "7B8372AB6D205D09"
+				item: {
+					Count: 1
+					id: "soulsweapons:withered_wabbajack"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["20A1FB824D447D83"]
+			id: "6DAF7A19F447E80D"
+			tasks: [{
+				id: "3483FFE464F9DBA5"
+				item: {
+					Count: 1
+					id: "soulsweapons:chaos_crown"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20A1FB824D447D83"]
+			id: "5E8C8346F416E9F3"
+			tasks: [{
+				id: "0AC834C01D0FFD42"
+				item: {
+					Count: 1
+					id: "soulsweapons:chaos_robes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.0d
+		}
+		{
+			description: ["Throw this to spawn the Day Stalker and Night Prowler"]
+			id: "69E3D58D234E707E"
+			tasks: [{
+				id: "3D37DFE45DDDE78A"
+				item: "soulsweapons:chaos_orb"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
+	]
+	title: "Mariums soulslike weaponry"
+}

@@ -1,0 +1,13 @@
+filename = 'gag-forge-3.0.0-build.12.jar'
+name = 'Gadgets Against Grind'
+side = 'both'
+
+[download]
+hash = '9d6401406a6e66b0d06c9b91eeb4ec8559c7b959'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5737764
+project-id = 694962

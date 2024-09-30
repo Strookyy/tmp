@@ -1,0 +1,13 @@
+filename = 'elytrautilities-forge-2.2.1+1.20.1.jar'
+name = 'Elytra Utilities'
+side = 'client'
+
+[download]
+hash = '72f7460860124b72a12086237d8138b5327a40c027006b6a6bdc3db8ef5f95a88dfb4e201e7ac90abf6b53d4b10077de5d5b40531d5b0241ffc76e252d3e685a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Biz1PZ1d/versions/9QWUf0hR/elytrautilities-forge-2.2.1%2B1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'Biz1PZ1d'
+version = '9QWUf0hR'

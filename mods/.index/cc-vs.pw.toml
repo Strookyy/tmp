@@ -1,0 +1,13 @@
+filename = 'cc_vs-1.20.1-forge-0.1.0.jar'
+name = 'CC: VS'
+side = 'both'
+
+[download]
+hash = 'd88fbccc66f4f70f00c3840b4c210e1d71ac0628bf55ed7bbb923552f1e3271ebef790598f6fc59e309d79a6bac66da7f1935888488cfe61bcb47d7fd47236ab'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/bvgy8HrZ/versions/9BQnBIY9/cc_vs-1.20.1-forge-0.1.0.jar'
+
+[update.modrinth]
+mod-id = 'bvgy8HrZ'
+version = '9BQnBIY9'

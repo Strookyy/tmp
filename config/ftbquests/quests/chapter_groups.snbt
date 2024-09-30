@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "27CBE5A5303CC7BC", title: "The Beggining" }
+		{ id: "148B1DF01C829C23", title: "Technology" }
+		{ id: "5854A28DDC53BD03", title: "Exploration" }
+		{ id: "70729788EB8A3F82", title: "Weapons" }
+		{ id: "62A5D57AE5990860", title: "Resources" }
+	]
+}

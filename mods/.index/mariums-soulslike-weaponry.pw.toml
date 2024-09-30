@@ -1,0 +1,13 @@
+filename = 'soulslike-weaponry-1.1.4.4d-1.20.1-forge.jar'
+name = "Marium's Soulslike Weaponry"
+side = 'both'
+
+[download]
+hash = '7eb99e5587d7c09b1e8095060aeed93aabf0d653f92c31def21df32d6c775bbfc2aaf5c7c0c4a102335f047e3f2f6b26446b85f861078bc7baad6820e220cccd'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/oX6SohLj/versions/Tp3a2cKy/soulslike-weaponry-1.1.4.4d-1.20.1-forge.jar'
+
+[update.modrinth]
+mod-id = 'oX6SohLj'
+version = 'Tp3a2cKy'

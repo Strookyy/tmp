@@ -1,0 +1,13 @@
+filename = 'IntegratedTerminals-1.20.1-1.5.1.jar'
+name = 'Integrated Terminals'
+side = 'both'
+
+[download]
+hash = 'c24ab3afc2624dc40d6e4e6c8d1368bcadbc1d1c639f214f17082da942ffe74efec907cf6693e0e035132fa7b83be43d85d0c4629120008f822bb733423ff5fc'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/HmLJoQ1K/versions/5fahofPO/IntegratedTerminals-1.20.1-1.5.1.jar'
+
+[update.modrinth]
+mod-id = 'HmLJoQ1K'
+version = '5fahofPO'

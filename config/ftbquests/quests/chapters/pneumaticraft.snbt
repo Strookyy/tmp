@@ -1,0 +1,650 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pneumaticraft"
+	group: "148B1DF01C829C23"
+	id: "4FF39C4FAD3B87F4"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Pneumaticraft is a mod that lets you do cool things with pressured air."
+				""
+				"You can make drones, turrets, armour, tools and so much more with the power of compressed air!"
+				""
+				"&l&aStart by blowing up some iron ingots with TNT to get compressed iron!&r&r"
+				""
+				"You can automate this process later, but for now just blow up a bunch of iron!"
+			]
+			id: "35D11C5EA38CBD00"
+			tasks: [{
+				id: "1741253AEE6E9F4F"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35D11C5EA38CBD00"]
+			description: ["The pressure tube lets you move around compressed air!"]
+			id: "41B051BEF2044FA5"
+			tasks: [{
+				id: "056AE799F9F65345"
+				item: "pneumaticcraft:pressure_tube"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41B051BEF2044FA5"]
+			description: [
+				"The air compressor generates compressed air with fuel such as coal."
+				""
+				"It is the easiest way to automate compressed air, and one of the only ways you have access to currently."
+			]
+			id: "2DA12C19097D3179"
+			tasks: [{
+				id: "15B9BF0B36CB99D9"
+				item: "pneumaticcraft:air_compressor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41B051BEF2044FA5"]
+			description: ["The safety tube module prevents tube explosions by venting out air when the pressure threshold is reached"]
+			id: "2FC174B6A2607CDF"
+			tasks: [{
+				id: "2D551EDF55B94BA1"
+				item: "pneumaticcraft:safety_tube_module"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["35D11C5EA38CBD00"]
+			description: [
+				"The PNC:R manual is a very useful book that goes more in depth into all of the machines in Pneumaticraft"
+				""
+				"It is reccomended to make this if you are ever stuck or want to know what something does"
+			]
+			id: "268D53FCBE7F64A6"
+			tasks: [{
+				id: "19325C1C7470AF06"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "pneumaticcraft:book"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2DA12C19097D3179"]
+			description: [
+				"The pressure chamber allows you to fully automate compressed iron!"
+				""
+				"It also lets you create a bunch of other crafts."
+				""
+				"The pressure chamber is a multi-block with different sizes, this is the smallest size. Look up the build online to see the correct placements"
+			]
+			id: "17118CEBCD4D64CA"
+			tasks: [
+				{
+					count: 22L
+					id: "47B78E9D3303B12F"
+					item: { Count: 22, id: "pneumaticcraft:pressure_chamber_wall" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4950D3EAAB7953A4"
+					item: { Count: 2, id: "pneumaticcraft:pressure_chamber_valve" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "522FE3396D401983"
+					item: { Count: 2, id: "pneumaticcraft:pressure_chamber_interface" }
+					type: "item"
+				}
+			]
+			title: "Pressurizing"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17118CEBCD4D64CA"]
+			description: ["The Thermopneumatic processing plant can be used to get a number of things including biodiesel, plastic, glycerol, machine upgrades and more!"]
+			id: "409069CE9A6DD8A2"
+			tasks: [{
+				id: "2C6121DA4B56F9A8"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"31D4D8639BB3FB68"
+				"65C0A4B00A5476E6"
+				"4D906CB65EA91DE1"
+			]
+			description: [
+				"Combine plant oil and ethanol in a Fluid Mixer to make biodiesel!"
+				""
+				"The byproduct of this process is Drops of Glycerol, used to make machine upgrades!"
+			]
+			id: "3EC41C7D0A2193A7"
+			tasks: [{
+				id: "1290A7DF1AEC176E"
+				item: "pneumaticcraft:glycerol"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5A7786D082E50DD7"]
+			description: ["Ferment sugar and bone meal to create ethanol, needed for drops of glycerol"]
+			id: "31D4D8639BB3FB68"
+			tasks: [{
+				amount: 1000L
+				fluid: "createdieselgenerators:ethanol"
+				id: "5110A4F21FDC7A69"
+				type: "fluid"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			description: ["The basin lid lets you ferment things with create basins"]
+			id: "5A7786D082E50DD7"
+			tasks: [{
+				id: "1D5567A27ED33A28"
+				item: "createdieselgenerators:basin_lid"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			description: ["Compact plants in a basin with a mechanical press (from the create mod) to create plant oil!"]
+			id: "65C0A4B00A5476E6"
+			tasks: [{
+				amount: 1000L
+				fluid: "createdieselgenerators:plant_oil"
+				id: "4349C0EE449F2166"
+				type: "fluid"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4B2630782E1C1BEA"]
+			description: ["The fluid mixer... Mixes... Fluids..."]
+			id: "4D906CB65EA91DE1"
+			tasks: [{
+				id: "37BEF0589FB044C5"
+				item: "pneumaticcraft:fluid_mixer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["45A62D8F471967FD"]
+			id: "4B2630782E1C1BEA"
+			tasks: [{
+				id: "49F487E4ACE406A6"
+				item: "pneumaticcraft:turbine_rotor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17118CEBCD4D64CA"]
+			id: "45A62D8F471967FD"
+			tasks: [{
+				id: "1A10881128588AA8"
+				item: "pneumaticcraft:turbine_blade"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"409069CE9A6DD8A2"
+				"3EC41C7D0A2193A7"
+				"2143BEF285BCB755"
+			]
+			description: ["Combine biodiesel and coal / charcoal in the TTP to make molten plastic!"]
+			id: "665CDA7750A11E9D"
+			tasks: [{
+				amount: 1000L
+				fluid: "pneumaticcraft:plastic"
+				id: "0BE84BE1097F45E0"
+				type: "fluid"
+			}]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["17118CEBCD4D64CA"]
+			description: [
+				"The vortex tube generates heat, which is needed for crafting recipes in the TTP"
+				""
+				"The vortex tube produces heat on one side and freezes on the other, which can be used to cool molten plastic!"
+			]
+			id: "765558D80D5523A5"
+			tasks: [{
+				id: "4D00B35B320143B6"
+				item: "pneumaticcraft:vortex_tube"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["765558D80D5523A5"]
+			description: ["The heat pipe is used to transfer heat"]
+			id: "2143BEF285BCB755"
+			tasks: [{
+				id: "5CE123C181446E37"
+				item: "pneumaticcraft:heat_pipe"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["665CDA7750A11E9D"]
+			description: [
+				"The heat frame applies heat (or cold) to any block"
+				""
+				"Place the heat frame on a chest and cool it, then place a bucket of your molten plastic inside to turn it into actual plastic!"
+				""
+				"If you want to automate this process you can use a fluid encapsulator from the Thermal Series mod"
+			]
+			id: "3CF99996D41BC825"
+			tasks: [{
+				id: "663A9AC1249821EC"
+				item: "pneumaticcraft:heat_frame"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3CF99996D41BC825"]
+			id: "748DA7C9DB59C9AF"
+			tasks: [{
+				id: "00F94AC6EE8D8664"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"The Amadron tablet lets you buy stuff with other stuff!"
+				""
+				"This will be needed for the PCB blueprint"
+				""
+				"You will need to set a pickup destination (a chest) for your emeralds "
+			]
+			id: "5191A5AA9EDD6812"
+			tasks: [{
+				id: "0938C30C910303AE"
+				item: "pneumaticcraft:amadron_tablet"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["748DA7C9DB59C9AF"]
+			description: ["The empty PCB is the start of the PCB production process!"]
+			id: "0861B87AC8AA2659"
+			tasks: [{
+				id: "34A716A0431B8D88"
+				item: "pneumaticcraft:empty_pcb"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5191A5AA9EDD6812"
+				"0861B87AC8AA2659"
+			]
+			description: ["The UV light box processes empty PCB's to increase their etch chance. Empty PCB's start at 0% and the UV light box increases that exponentially. You can set a threshold inside, 100% etch chance is reccomended"]
+			id: "6CA268CFD61A69DA"
+			tasks: [{
+				id: "6D08AF458DC7D15A"
+				item: "pneumaticcraft:uv_light_box"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6CA268CFD61A69DA"
+				"1BA3793834B4B7D7"
+			]
+			id: "512FAAF5CB1BF22D"
+			tasks: [{
+				id: "1F10D0E73F225F4E"
+				item: "pneumaticcraft:etching_tank"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 1.0d
+		}
+		{
+			description: ["Mix 5 iron ingots, 1 redstone, and 250MB of plant oil to make etch acid! (using the create mod mixer)"]
+			id: "1BA3793834B4B7D7"
+			tasks: [{
+				amount: 1000L
+				fluid: "pneumaticcraft:etching_acid"
+				id: "6C4808E1218A20BF"
+				type: "fluid"
+			}]
+			x: 17.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"512FAAF5CB1BF22D"
+				"51BEE6C43B574805"
+				"54BA217AEA70A594"
+			]
+			description: ["Congrats! You have a finished PCB!"]
+			id: "0C01BDAE796B0FA7"
+			tasks: [{
+				id: "2BC5CA667499B3A3"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 1.0d
+		}
+		{
+			id: "51BEE6C43B574805"
+			tasks: [{
+				id: "24580DCB10C92843"
+				item: "pneumaticcraft:transistor"
+				type: "item"
+			}]
+			x: 18.5d
+			y: -0.5d
+		}
+		{
+			id: "54BA217AEA70A594"
+			tasks: [{
+				id: "7E67DCA58D298DEF"
+				item: "pneumaticcraft:capacitor"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0C01BDAE796B0FA7"]
+			id: "6F28A7B539535903"
+			tasks: [{
+				id: "5DE2F71BC385C6AE"
+				item: "pneumaticcraft:assembly_controller"
+				type: "item"
+			}]
+			x: 22.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0C01BDAE796B0FA7"]
+			id: "143884160998314A"
+			tasks: [{
+				id: "0FA290A1C1167AC5"
+				item: "pneumaticcraft:assembly_drill"
+				type: "item"
+			}]
+			x: 23.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0C01BDAE796B0FA7"]
+			id: "2936CC8B760A2007"
+			tasks: [{
+				id: "764C4B6C16190283"
+				item: "pneumaticcraft:assembly_io_unit_export"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C01BDAE796B0FA7"]
+			id: "21650EBFA7AAFC00"
+			tasks: [{
+				id: "690DC8FE0677D5FD"
+				item: "pneumaticcraft:assembly_io_unit_import"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0C01BDAE796B0FA7"]
+			id: "7CBD0136132A1A4E"
+			tasks: [{
+				id: "11CC1C7AEFAD891C"
+				item: "pneumaticcraft:assembly_laser"
+				type: "item"
+			}]
+			x: 22.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0C01BDAE796B0FA7"]
+			description: ["The flux compressor uses FE or RF to generate pressure!"]
+			id: "1E01065A00DD023B"
+			tasks: [{
+				id: "444743A2DF4E469E"
+				item: "pneumaticcraft:flux_compressor"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2936CC8B760A2007"
+				"21650EBFA7AAFC00"
+				"143884160998314A"
+				"6F28A7B539535903"
+				"7CBD0136132A1A4E"
+			]
+			description: [
+				"The assembly line is quite complicated in Pneumaticraft, so use the PNC:R book or youtube to figure out how to build it."
+				""
+				"With the assembly line you can create advanced tubes that can hold 5x more pressure!"
+			]
+			id: "7273F300384F8450"
+			tasks: [{
+				id: "615218889207D28D"
+				item: "pneumaticcraft:advanced_pressure_tube"
+				type: "item"
+			}]
+			x: 26.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C01BDAE796B0FA7"]
+			description: ["The drone is one of the best items in Pneumaticraft. It can be programmed to break blocks, pick up mobs, fight and SO much more"]
+			id: "6216D63072D57FBF"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "54DFEB6F615CBF80"
+				item: "pneumaticcraft:drone"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6216D63072D57FBF"]
+			description: ["The programmer can be used to program the drone!"]
+			id: "6ACF03DDC3EFB4C0"
+			tasks: [{
+				id: "7861FF1A57C8C20E"
+				item: "pneumaticcraft:programmer"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["41B051BEF2044FA5"]
+			description: ["Its a minigun!"]
+			id: "6F84F677ADBC9473"
+			tasks: [{
+				id: "6AD0F13C7DB5BF28"
+				item: "pneumaticcraft:minigun"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6F84F677ADBC9473"]
+			description: ["And you can attach it to a turret!"]
+			id: "276C8325D06CDC3B"
+			tasks: [{
+				id: "1C9104BFD5FC726D"
+				item: "pneumaticcraft:sentry_turret"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F84F677ADBC9473"]
+			id: "4967AB618FBCC242"
+			tasks: [{
+				id: "5CAA52F7BE188027"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:gun_ammo"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6F84F677ADBC9473"]
+			id: "447E9BE8BDEC763A"
+			tasks: [{
+				id: "2BEEBEDDDE125F9B"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:gun_ammo_ap"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6F84F677ADBC9473"]
+			id: "3EB7BB25061FF858"
+			tasks: [{
+				id: "486FBD7CCFDF85A2"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:gun_ammo_explosive"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F84F677ADBC9473"]
+			id: "46D49112EA029C4C"
+			tasks: [{
+				id: "12DDC08F0A022478"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:gun_ammo_freezing"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F84F677ADBC9473"]
+			id: "00AD67ECC92F22AE"
+			tasks: [{
+				id: "3D5ED898BF3B6B2D"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:gun_ammo_incendiary"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6F84F677ADBC9473"]
+			id: "08BF9BA290D7BADF"
+			tasks: [{
+				id: "7FE925EEBD6643C9"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:gun_ammo_weighted"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	title: "Pneumaticraft"
+}

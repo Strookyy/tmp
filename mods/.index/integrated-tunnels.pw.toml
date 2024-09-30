@@ -1,0 +1,13 @@
+filename = 'IntegratedTunnels-1.20.1-1.8.31.jar'
+name = 'Integrated Tunnels'
+side = 'both'
+
+[download]
+hash = 'cc2a2fae42f5ea903a5d980072d4d4916f87587c25a1ad037fccad22193ef420d7ec9eb25ef475dc07943c5faeb3ad22b7c7f78e37521fba03dcede83855e2c7'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Etqy1Omb/versions/VWkNplXJ/IntegratedTunnels-1.20.1-1.8.31.jar'
+
+[update.modrinth]
+mod-id = 'Etqy1Omb'
+version = 'VWkNplXJ'

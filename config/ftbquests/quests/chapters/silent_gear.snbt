@@ -1,0 +1,284 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "silent_gear"
+	group: "27CBE5A5303CC7BC"
+	id: "4AFDF54EBEBC2583"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["07C9E36BB5386E66"]
+			description: [
+				"Silent gear is the primary mod for tools in this modpack, the core idea is that you combine parts of tools such as the handle, head, tip, grip etc into one tool."
+				""
+				"This means there are a practically infinite amount of tool combinations, and you can mix and match materials to get your desired traits and abilities!"
+				""
+				"&l&aStart the mod by getting some blueprint paper!&r&r"
+			]
+			id: "506E3ECD798A9C25"
+			rewards: [
+				{
+					id: "0B42E25AD57A9878"
+					item: {
+						Count: 1
+						id: "silentgear:blueprint_book"
+						tag: {
+							Inventory: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "0A9E314DFCA56A1A"
+					item: "silentgear:blueprint_paper"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2DD5F9F6F7CD544E"
+				item: "silentgear:blueprint_paper"
+				type: "item"
+			}]
+			title: "Silent Gear"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			description: [
+				"The tool rod is used to make tools along with a tool head!"
+				""
+				"Make a tool head using any of the tool blueprints"
+			]
+			id: "5C1AFC2545A34B67"
+			tasks: [{
+				id: "25930AE519FFF0BE"
+				item: "silentgear:rod_blueprint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			description: [
+				"The tip blueprint can be added to tools to improve their stats!"
+				""
+				"For example, if you add a diamond tip to an iron pickaxe, the pickaxe will act as if it were made out of diamond while still being made out of iron!"
+				""
+				"It should be noted though that making your tool heads out of a strong material still improves their stats, so don't rely completely on tips!"
+			]
+			id: "34FE5CAE6CEB319C"
+			tasks: [{
+				id: "5BE316E02CB4E3C3"
+				item: "silentgear:tip_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			description: ["Tool grips can help improve certain stats of your tools such as mining speed or damage!"]
+			id: "7112779B3B16D4BC"
+			tasks: [{
+				id: "12CA8633EF551BE5"
+				item: "silentgear:grip_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "0DB3CBABC9E4AD3A"
+			tasks: [{
+				id: "12E8D09E2A222125"
+				item: "silentgear:pickaxe_blueprint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "2E2BD469E6173E6E"
+			tasks: [{
+				id: "21876076C1B56C23"
+				item: "silentgear:sword_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "1966A318B3779949"
+			tasks: [{
+				id: "176C4F5790595D73"
+				item: "silentgear:spear_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "75995BD983BC680C"
+			tasks: [{
+				id: "458F659FBBF79B62"
+				item: "silentgear:axe_blueprint"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "6EAAAE61D16E155C"
+			tasks: [{
+				id: "6462EE3AC9F270D7"
+				item: "silentgear:trident_blueprint"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "19FA325FA3CC58A0"
+			tasks: [{
+				id: "2E7A80C42F6AE932"
+				item: "silentgear:shovel_blueprint"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "08B26F7D906D14AC"
+			tasks: [{
+				id: "1031469E7AF3653C"
+				item: "silentgear:hoe_blueprint"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "40ECF722FCD45E76"
+			tasks: [{
+				id: "6A29F5D3AB3F12CF"
+				item: "silentgear:bow_blueprint"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "3EF0F1318BA25E29"
+			tasks: [{
+				id: "2449E24F6C3E4CBC"
+				item: "silentgear:crossbow_blueprint"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "0F2A683AA1A8A057"
+			tasks: [{
+				id: "37F0211E247DDCA1"
+				item: "silentgear:paxel_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			id: "5F82E5D44FA06B9C"
+			tasks: [{
+				id: "3C2CFAC06076A17F"
+				item: "silentgear:sickle_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["506E3ECD798A9C25"]
+			description: [
+				"To make a tool, first put a blueprint of the tool you want to make (eg sword) in a crafting table along with the material that you want to make the tool out of"
+				""
+				"You need to put the material the same way you would if you were crafting this normally, eg for a sword two ingots diagonally (you can also check the crafting book or JEI to help with this)"
+				""
+				"Then make a tool rod using the tool rod blueprint."
+				""
+				"Combine the rod and head in a crafting table, and voila! a brand new tool!"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7467246544C02B1D"
+			rewards: [
+				{
+					count: 5
+					id: "72247ADEDD205C45"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "1CA71266D7698F63"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "61DF593286E3B443"
+				title: "Your first tool"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7467246544C02B1D"]
+			description: [
+				"Repair packs let you repair your tools!"
+				""
+				"Tools in silent gear don't actually break, when they get to 0 durability they stay in your inventory but don't work anymore"
+				""
+				"Use a repair pack to repair you tools, combine the repair pack in the crafting table with whatever material your tools is made out of to fill it up"
+				""
+				"Then combine your tool with the repair pack to repair your tool!"
+			]
+			id: "61FA4198F315B074"
+			tasks: [{
+				id: "3B1DF472E216E89F"
+				item: {
+					Count: 1
+					id: "silentgear:sturdy_repair_kit"
+					tag: {
+						Storage: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "I can put you back together"
+			x: 5.0d
+			y: 0.0d
+		}
+	]
+	title: "Silent Gear"
+}

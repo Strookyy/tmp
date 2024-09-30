@@ -1,0 +1,13 @@
+filename = 'advgenerators-1.6.0.6-mc1.20.1.jar'
+name = 'Advanced Generators'
+side = 'both'
+
+[download]
+hash = '1884671a29423cf4c9f9cb07e832e286d66afa2fdeab80a04ee3433fc27f5d2eed7723ca443442c54af91823a427326fee0cccabcb04e0e3978ff1b76ab92309'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/qG2blzpo/versions/iPXq61FW/advgenerators-1.6.0.6-mc1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'qG2blzpo'
+version = 'iPXq61FW'

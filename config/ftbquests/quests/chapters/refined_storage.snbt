@@ -1,0 +1,246 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "refined_storage"
+	group: "148B1DF01C829C23"
+	id: "2BA06207224CC349"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Refined Storage is a mod that lets you store items in Hard Drives and then create a storage network to efficiently automatically make items"
+				""
+				"You can connect machines from different tech mods, do basic crafting and so much more"
+				""
+				"The controller is the heart of the RS system, and you connect everything else to it"
+			]
+			id: "15F07CE9D2EBC7D7"
+			tasks: [{
+				id: "208120C9333F31F4"
+				item: "refinedstorage:controller"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15F07CE9D2EBC7D7"]
+			description: [
+				"The grid allows you to actually access your RS system"
+				""
+				"It opens up an interface which shows you ALL of the items in your system!"
+			]
+			id: "1F0404119AC2D6B7"
+			tasks: [{
+				id: "7A50C8618888CC72"
+				item: "refinedstorage:grid"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F0404119AC2D6B7"]
+			description: ["The disk drive lets you store storage disks in it, allowing you to actually store items!"]
+			id: "15CC777C997B48E7"
+			tasks: [{
+				id: "0478E42214B9324B"
+				item: "refinedstorage:disk_drive"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F0404119AC2D6B7"]
+			description: ["You can use cable to connect parts of your RS system. Parts directly touching eachother don't need cables, but parts not touching eachother do"]
+			id: "42F8206BC50D802B"
+			tasks: [{
+				id: "13388BE0D3D3732A"
+				item: "refinedstorage:cable"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["15CC777C997B48E7"]
+			description: [
+				"The 1k storage disk can store 1000 items"
+				""
+				"While it's small, you can store quite a decent amount in the disk drive. It should last you a decent bit"
+			]
+			id: "57ADA2A7539BF59E"
+			tasks: [{
+				id: "6C0B9CE630E3D096"
+				item: "refinedstorage:1k_storage_disk"
+				type: "item"
+			}]
+			title: "Can't even store Call Of Duty"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F0404119AC2D6B7"]
+			description: [
+				"The crafting grid lets you craft items from within the grid."
+				""
+				"This is &lVERY&r useful as you can autofill recipes from JEI and it will use items from your storage system"
+			]
+			id: "658BC27642E97C65"
+			tasks: [{
+				id: "618B3BC62033513B"
+				item: "refinedstorage:crafting_grid"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["57ADA2A7539BF59E"]
+			description: ["The importer connects to some storage container (e.g. a chest) and pulls items from that container into your RS system"]
+			id: "613B00E181AD56CB"
+			tasks: [{
+				id: "3ECF3F2796293847"
+				item: "refinedstorage:importer"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57ADA2A7539BF59E"]
+			description: [
+				"The exporter connects to a storage container (e.g. a chest) and pulls items from your RS system into the container."
+				""
+				"You have to set the item it will be exporting inside of the exporter"
+			]
+			id: "26E8103D7779F132"
+			tasks: [{
+				id: "2EA45E3B5BEC59EB"
+				item: "refinedstorage:exporter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57ADA2A7539BF59E"]
+			description: [
+				"The external storage connects to a storage container (e.g. a chest) and lets you access the items inside that container from your RS system"
+				""
+				"The items inside of the container will show up in your grid, but not fill up your storage disks"
+			]
+			id: "73188B26AF3339FE"
+			tasks: [{
+				id: "206C72456F0D8215"
+				item: "refinedstorage:external_storage"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57ADA2A7539BF59E"]
+			description: ["The constructor builds blocks using blocks from your RS system"]
+			id: "34C1849FCC6748A7"
+			tasks: [{
+				id: "2C7C425AB638C5BE"
+				item: "refinedstorage:constructor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["57ADA2A7539BF59E"]
+			description: [
+				"The destructor breaks blocks in front of it and puts the dropped item in your RS system"
+				""
+				"It can be upgraded with fortune and silk touch"
+			]
+			id: "33F9C198C82AFB03"
+			tasks: [{
+				id: "78D1CD6D1D8417B2"
+				item: "refinedstorage:destructor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["57ADA2A7539BF59E"]
+			description: ["The storage monitor displays how much of a certain item is in your RS system"]
+			id: "50994A7FAA992A71"
+			tasks: [{
+				id: "7CC607B3386E71AA"
+				item: "refinedstorage:storage_monitor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["57ADA2A7539BF59E"]
+			description: ["The pattern grid allows you to make patterns for autocrafting"]
+			id: "53771C58F69912D2"
+			tasks: [{
+				id: "5EFB6DA8F5B080E7"
+				item: "refinedstorage:pattern_grid"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["53771C58F69912D2"]
+			description: [
+				"Patterns contain instructions on how to make a certain item"
+				""
+				"In the pattern grid, lay down the crafting recipe for the item and put an empty pattern in to inscribe it"
+			]
+			id: "4673E38235C76383"
+			tasks: [{
+				id: "033A56DCC91F3D60"
+				item: {
+					Count: 1
+					id: "refinedstorage:pattern"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4673E38235C76383"]
+			description: [
+				"The crafter accepts patterns and crafts items!"
+				""
+				"When you craft an item in the grid, it will also craft any items that you need for that item that you don't have currently (as long as you have made a pattern for them)"
+			]
+			id: "7D09846137DD0544"
+			tasks: [{
+				id: "460EF2B556AF6E23"
+				item: "refinedstorage:crafter"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7D09846137DD0544"]
+			description: ["The requester will automatically craft items to keep the amount of that item about a certain threshhold"]
+			id: "4049C3213CE0B66A"
+			tasks: [{
+				id: "3413090BBBFF9D1E"
+				item: "rsrequestify:requester"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+	]
+	title: "Refined Storage"
+}

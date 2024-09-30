@@ -1,0 +1,293 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekasuit"
+	group: "148B1DF01C829C23"
+	id: "1FD1152E0C816BFA"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The MEKASUIT is a set of armour in the Mekanism mod that can be upgraded with modules into one of the best pieces of armour in the game."]
+			icon: {
+				Count: 1
+				id: "mekanism:mekasuit_bodyarmor"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "16000000"
+						}]
+					}
+				}
+			}
+			id: "5729AEB813BD43CD"
+			tasks: [{
+				id: "63582536820FABA7"
+				title: "MEKASUIT!!!"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5729AEB813BD43CD"]
+			description: [
+				"Creating a fission reactor is the first step in the MEKASUIT process, as it is needed to produce nuclear waste."
+				""
+				"Create a nuclear reactor and make sure to keep your nuclear waste!"
+			]
+			id: "69690AF1839D6C76"
+			tasks: [{
+				id: "5A5D8D43617FD1D2"
+				item: "mekanismgenerators:fission_reactor_casing"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"69690AF1839D6C76"
+				"44FD98504A116A14"
+				"2278B66DC0D4EAE0"
+			]
+			id: "1A50D2E5041F436A"
+			tasks: [{
+				id: "3275698AD56D5296"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"69690AF1839D6C76"
+				"1AD5DB6BDD461F02"
+				"2278B66DC0D4EAE0"
+			]
+			id: "723789F70B151D68"
+			tasks: [{
+				id: "10ACFB024CB9048A"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["69690AF1839D6C76"]
+			id: "44FD98504A116A14"
+			tasks: [{
+				id: "1DC2BB45FA24413E"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["69690AF1839D6C76"]
+			id: "1AD5DB6BDD461F02"
+			tasks: [{
+				id: "0E35CD2B679D1252"
+				item: "mekanism:isotopic_centrifuge"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["69690AF1839D6C76"]
+			id: "2278B66DC0D4EAE0"
+			tasks: [{
+				id: "1D2A459C447F9603"
+				item: "mekanism:dust_fluorite"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2278B66DC0D4EAE0"
+				"1A1B1DA56CF6E924"
+			]
+			id: "466E25D6884B43D9"
+			tasks: [{
+				amount: 1000L
+				fluid: "mekanismgenerators:tritium"
+				id: "1307ADA27DD4E596"
+				type: "fluid"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2278B66DC0D4EAE0"]
+			id: "31C2F2B0D7AB63FA"
+			tasks: [{
+				amount: 1000L
+				fluid: "mekanismgenerators:deuterium"
+				id: "5A5D09F1EA7CD015"
+				type: "fluid"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B5968EBB71C8C79"]
+			id: "1A1B1DA56CF6E924"
+			tasks: [{
+				id: "5BCB159ABF292D18"
+				item: "mekanism:thermal_evaporation_controller"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30FC9437EB6EDFB1"]
+			id: "3B5968EBB71C8C79"
+			tasks: [{
+				id: "33FC880F60879FF9"
+				item: "mekanism:salt"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			id: "30FC9437EB6EDFB1"
+			tasks: [{
+				id: "65E1C666AFA3D6BA"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"466E25D6884B43D9"
+				"098F1C180D4D3962"
+			]
+			id: "56B67960928B5528"
+			tasks: [{
+				id: "1EC53D345B4FC717"
+				item: "mekanismgenerators:fusion_reactor_controller"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"31C2F2B0D7AB63FA"
+				"466E25D6884B43D9"
+			]
+			id: "0C35C5CD4E017E8A"
+			tasks: [{
+				amount: 1000L
+				fluid: "mekanismgenerators:fusion_fuel"
+				id: "14409BF5F1EB8083"
+				type: "fluid"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0C35C5CD4E017E8A"]
+			id: "098F1C180D4D3962"
+			tasks: [{
+				id: "47DBC1CCEED3EAE5"
+				item: {
+					Count: 1
+					id: "mekanismgenerators:hohlraum"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 10L
+									gasName: "mekanismgenerators:fusion_fuel"
+								}
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["56B67960928B5528"]
+			id: "6E2B2F9E2F013212"
+			tasks: [{
+				id: "605975A5E0AF5AB3"
+				item: "mekanism:sps_casing"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E2B2F9E2F013212"]
+			id: "116889691B7A1F00"
+			tasks: [{
+				id: "7C731DA4C37305B8"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["116889691B7A1F00"]
+			id: "55F73FCED0AD62BD"
+			tasks: [{
+				id: "52FD820198FBDB23"
+				item: "mekanism:mekasuit_helmet"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["116889691B7A1F00"]
+			id: "78C9E6C201D57E84"
+			tasks: [{
+				id: "50C367182EE208CC"
+				item: "mekanism:mekasuit_bodyarmor"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["116889691B7A1F00"]
+			id: "7C5A207D81AD7B1D"
+			tasks: [{
+				id: "20C31F37FD2D8CB7"
+				item: "mekanism:mekasuit_pants"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["116889691B7A1F00"]
+			id: "54DF37157CA48832"
+			tasks: [{
+				id: "550EE88E5E5439BE"
+				item: "mekanism:mekasuit_boots"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.5d
+		}
+	]
+	title: "MEKASUIT"
+}

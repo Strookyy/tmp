@@ -1,0 +1,242 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mystical_agriculture"
+	group: "62A5D57AE5990860"
+	id: "5BD2FA5F89F92A9A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"The beggining of mystical agriculture, a mod that lets you grow resources!"
+				""
+				"Find this underground!"
+			]
+			id: "510D6F4D80704961"
+			tasks: [{
+				id: "716B963E485C8DD8"
+				item: "mysticalagriculture:inferium_essence"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["510D6F4D80704961"]
+			description: ["The infusion crystal lets you craft higher tiers of essence!"]
+			id: "7C8BEBAA1A1ACC1E"
+			tasks: [{
+				id: "71AD8952F79B6E2D"
+				item: {
+					Count: 1
+					id: "mysticalagriculture:infusion_crystal"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7C8BEBAA1A1ACC1E"]
+			description: ["The master infusion crystal has infinite uses!"]
+			id: "66E2462F3C87FC1C"
+			tasks: [{
+				id: "6AF155A001F8506C"
+				item: "mysticalagriculture:master_infusion_crystal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7C8BEBAA1A1ACC1E"]
+			description: [
+				"Used to make seeds"
+				""
+				"Check JEI for uses"
+			]
+			id: "1539D42516C6841C"
+			tasks: [{
+				id: "4A9892FCAFFE0444"
+				item: "mysticalagriculture:prudentium_essence"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1539D42516C6841C"]
+			description: [
+				"Used to make seeds"
+				""
+				"Check JEI for uses"
+			]
+			id: "4CEA29810AEC166C"
+			tasks: [{
+				id: "47DC279814B4D0A6"
+				item: "mysticalagriculture:tertium_essence"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4CEA29810AEC166C"]
+			description: [
+				"Used to make seeds"
+				""
+				"Check JEI for uses"
+			]
+			id: "317FF855CC77F5EB"
+			tasks: [{
+				id: "7E825A5166A187EC"
+				item: "mysticalagriculture:imperium_essence"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["317FF855CC77F5EB"]
+			description: [
+				"Used to make seeds"
+				""
+				"Check JEI for uses"
+			]
+			id: "437C96E7EC336431"
+			tasks: [{
+				id: "184037A408879E80"
+				item: "mysticalagriculture:supremium_essence"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["437C96E7EC336431"]
+			description: [
+				"Used to make seeds"
+				""
+				"Check JEI for uses"
+			]
+			id: "4F85D3866A497F62"
+			tasks: [{
+				id: "162826FF3B860100"
+				item: "mysticalagradditions:insanium_essence"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["510D6F4D80704961"]
+			description: ["Infusion crafting lets you make seeds!"]
+			id: "09C913378D3FE704"
+			tasks: [{
+				id: "0E89DF6C7A298877"
+				item: "mysticalagriculture:infusion_altar"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["09C913378D3FE704"]
+			id: "761D20F13D3DDB8B"
+			tasks: [{
+				id: "2277138FC8F686C9"
+				item: "mysticalagriculture:infusion_pedestal"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["510D6F4D80704961"]
+			description: ["Make infernium seeds so you can grow infernium!"]
+			id: "078B314D8C66BFDC"
+			tasks: [{
+				id: "34B84133E5D2CC14"
+				item: "mysticalagriculture:inferium_seeds"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1539D42516C6841C"
+				"09C913378D3FE704"
+			]
+			id: "4753E12A5578A060"
+			tasks: [{
+				id: "4254C5A337F6CC51"
+				item: "mysticalagriculture:coal_seeds"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4CEA29810AEC166C"
+				"09C913378D3FE704"
+			]
+			id: "63E4C913620BA286"
+			tasks: [{
+				id: "4E9D847C190EE5E6"
+				item: "mysticalagriculture:iron_seeds"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"437C96E7EC336431"
+				"09C913378D3FE704"
+			]
+			id: "664085C4EEF6B84E"
+			tasks: [{
+				id: "360AD3A82E24648D"
+				item: "mysticalagriculture:diamond_seeds"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"317FF855CC77F5EB"
+				"09C913378D3FE704"
+			]
+			id: "4F4A9A0CAC2A6F0C"
+			tasks: [{
+				id: "651B6CB8AC211CBC"
+				item: "mysticalagriculture:gold_seeds"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"4F85D3866A497F62"
+				"09C913378D3FE704"
+			]
+			id: "7C08835B3DEC7707"
+			tasks: [{
+				id: "767B93DA0181F8CF"
+				item: "mysticalagriculture:awakened_draconium_seeds"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+	]
+	title: "Mystical Agriculture"
+}

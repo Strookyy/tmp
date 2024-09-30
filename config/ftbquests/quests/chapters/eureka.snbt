@@ -1,0 +1,101 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "eureka"
+	group: "148B1DF01C829C23"
+	id: "19090142ACBE605B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Eureka! Is a mod that lets you build boats, airships and cars!"
+				""
+				"Build something, e.g a boat, and then place a ship helm on it!"
+				""
+				"Sneak-Right-Click the ship helm and click assemble! Your building will now have physics and you can drive using the helm!"
+			]
+			id: "672643127CF6337D"
+			shape: "rsquare"
+			tasks: [{
+				id: "618E54CB057FA644"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "vs_eureka:ship_helms"
+					}
+				}
+				type: "item"
+			}]
+			title: "Eureka!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["672643127CF6337D"]
+			description: [
+				"Balloons can be added to ships to make them able to fly!"
+				""
+				"More balloons means for flight power, if you don't have enough then your structure will sink!"
+			]
+			id: "1A19B4E1B23028C6"
+			tasks: [{
+				id: "5C6CE0223313571E"
+				item: "vs_eureka:balloon"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["672643127CF6337D"]
+			description: [
+				"The floater is a block that helps things float in water!"
+				""
+				"This block is very useful if you are trying to build a pirate ship! (I know archer is reading this right now)"
+			]
+			id: "55363EEF3C4A7160"
+			tasks: [{
+				id: "1A3849D9C7234732"
+				item: "vs_eureka:floater"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["672643127CF6337D"]
+			description: [
+				"The ballast is really heavy..."
+				""
+				"Thats it"
+			]
+			id: "276F1FA7AD4EE29C"
+			tasks: [{
+				id: "6EF49D1B95525752"
+				item: "vs_eureka:ballast"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["672643127CF6337D"]
+			description: [
+				"The ship engine makes your ships go faster!"
+				""
+				"You can stack these to make your ship go VERY fast"
+			]
+			id: "4EA3BDA4E9E4D264"
+			tasks: [{
+				id: "505CBB0022368649"
+				item: "vs_eureka:engine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "Eureka!"
+}

@@ -1,0 +1,268 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "weapons"
+	group: "148B1DF01C829C23"
+	id: "60882CBDE47EB392"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Gun steel is made by combining iron and netherite scrap in a Superheated mixer. Gun steel is the main component of guns and you will need a LOT of it"]
+			id: "5151A0A7D407AE1D"
+			tasks: [{
+				id: "08A1A334C3454540"
+				item: "kubejs:gun_steel_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5151A0A7D407AE1D"
+				"577D5BA70CD9DEA6"
+			]
+			description: [
+				"The gun core is made with 20 gun steel, a netherite ingot and a Technology Core in a superheated mixer."
+				""
+				"The gun core is not only used to make guns, but certain crafting components of guns such as slides and barrels!"
+			]
+			id: "5E4894EBA4F2888E"
+			tasks: [{
+				id: "7071A855839C9577"
+				item: "kubejs:gun_core"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "577D5BA70CD9DEA6"
+			tasks: [{
+				id: "332E08AD81461EEF"
+				item: "kubejs:tech_core"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5E4894EBA4F2888E"]
+			description: [
+				"The gun slide is the most expensive component of the gun, requiring over 60 gun steel!"
+				""
+				"It is used for the firing mechanism of guns"
+			]
+			id: "27E38969285307C0"
+			tasks: [{
+				id: "5731B264312E590B"
+				item: "kubejs:gun_slide"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5E4894EBA4F2888E"]
+			description: [
+				"The gun barrel is the least expensive part of the gun."
+				""
+				"It is used for... the barrel"
+			]
+			id: "0163395FFB19803E"
+			tasks: [{
+				id: "2B16593C97C4D9E9"
+				item: "kubejs:gun_barrel"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"27E38969285307C0"
+				"0163395FFB19803E"
+			]
+			id: "15FFA66E419A3635"
+			tasks: [{
+				id: "4A424865FC84BED6"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 19
+						GunFireMode: "AUTO"
+						GunId: "tacz:vector45"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"27E38969285307C0"
+				"0163395FFB19803E"
+			]
+			id: "67CC427068107127"
+			tasks: [{
+				id: "4B24F38EAB4957FC"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 40
+						GunFireMode: "AUTO"
+						GunId: "tacz:rpk"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"27E38969285307C0"
+				"0163395FFB19803E"
+			]
+			id: "6B299850BC3A6F27"
+			tasks: [{
+				id: "7755C662BA55C486"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 30
+						GunFireMode: "AUTO"
+						GunId: "tacz:m4a1"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"27E38969285307C0"
+				"0163395FFB19803E"
+			]
+			id: "1C208FE9963811AC"
+			tasks: [{
+				id: "226E2DA66FEF9CB5"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 17
+						GunFireMode: "SEMI"
+						GunId: "tacz:glock_17"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"27E38969285307C0"
+				"0163395FFB19803E"
+			]
+			id: "7017960718E03587"
+			tasks: [{
+				id: "69FDEDF5750144F6"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 12
+						GunFireMode: "SEMI"
+						GunId: "tacz:p320"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"27E38969285307C0"
+				"0163395FFB19803E"
+			]
+			id: "41B0C466D3D5FBFB"
+			tasks: [{
+				id: "1D455FF2AF481F84"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 7
+						GunFireMode: "SEMI"
+						GunId: "tacz:deagle"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"27E38969285307C0"
+				"0163395FFB19803E"
+			]
+			id: "773E3D84DC456C45"
+			tasks: [{
+				id: "553D6EF698DB9B8F"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 30
+						GunFireMode: "AUTO"
+						GunId: "tacz:aug"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"27E38969285307C0"
+				"0163395FFB19803E"
+			]
+			id: "1A6B71193409D002"
+			tasks: [{
+				id: "4A0633DCA1A2EE75"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 5
+						GunFireMode: "SEMI"
+						GunId: "tacz:m95"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+	]
+	title: "Weapons"
+}

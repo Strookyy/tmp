@@ -1,0 +1,47 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "resource_bees"
+	group: "62A5D57AE5990860"
+	id: "10A40B0BBBEE88D3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Make the advanced hive to store special bees!"]
+			id: "5D23538B836B301E"
+			tasks: [{
+				id: "3CCDE074D0C0C46E"
+				item: "productivebees:advanced_oak_beehive"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D23538B836B301E"]
+			description: ["Use this to capture bees!"]
+			id: "644797D70CCBB105"
+			tasks: [{
+				id: "6B8447AF9E85661D"
+				item: "productivebees:bee_cage"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["644797D70CCBB105"]
+			description: ["Add these to naturally found nests to spawn new bees!"]
+			id: "304A4240776533D2"
+			tasks: [{
+				id: "09326925F8CD6D04"
+				item: "productivebees:honey_treat"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	title: "Resource Bees"
+}

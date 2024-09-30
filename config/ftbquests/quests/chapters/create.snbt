@@ -1,0 +1,409 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "148B1DF01C829C23"
+	id: "2B97718A558285BE"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4DE9145D253CF553"
+				"6F48407F2F2719C4"
+			]
+			id: "6505A79EA3C4338D"
+			tasks: [{
+				id: "5A487DF65008A52A"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "6F48407F2F2719C4"
+			tasks: [{
+				id: "2274608DE2E48B45"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6505A79EA3C4338D"
+				"6F48407F2F2719C4"
+				"4731B524E35B0EC3"
+			]
+			id: "3C41A8357F65F828"
+			tasks: [{
+				id: "0D070AD8BF6D1CE4"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7248C81D5EDB938F"]
+			id: "4731B524E35B0EC3"
+			tasks: [{
+				id: "416F7341B263C0D1"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C41A8357F65F828"]
+			id: "6512056BA4FA5479"
+			tasks: [{
+				id: "4336EA71AB2747CC"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "7248C81D5EDB938F"
+			tasks: [{
+				id: "0964D491A177D8E2"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6512056BA4FA5479"
+				"2B8A73AED7AC4EC2"
+			]
+			id: "2510D17BE99AC96F"
+			tasks: [{
+				id: "184CE32179FDECC6"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6512056BA4FA5479"]
+			id: "2B8A73AED7AC4EC2"
+			tasks: [{
+				id: "2375FEB8E35D7624"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17ED123FDEA1A12F"]
+			id: "2803779ACAB7C609"
+			tasks: [{
+				id: "6DF3007E786ECB20"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6F48407F2F2719C4"]
+			id: "17ED123FDEA1A12F"
+			tasks: [{
+				id: "51FF4EA0229D7FD2"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"56B405B08BA64BDE"
+				"199D11731D48EAF7"
+				"2510D17BE99AC96F"
+				"2803779ACAB7C609"
+				"17ED123FDEA1A12F"
+			]
+			description: ["This is the most basic circuit, made from sturdy sheets, diamond and precision mechanisms. This unlocks trains and other items"]
+			id: "1A592FC32891C2C0"
+			tasks: [{
+				id: "2517C5F576B3D66E"
+				item: "kubejs:control_circuit"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2510D17BE99AC96F"
+				"5EF20B9A7CE17C86"
+			]
+			id: "199D11731D48EAF7"
+			tasks: [{
+				id: "30096461233C2A44"
+				item: "vintageimprovements:laser"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6F48407F2F2719C4"]
+			id: "56B405B08BA64BDE"
+			tasks: [{
+				id: "1E915AE7B4E95D66"
+				item: "vintageimprovements:belt_grinder"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5EF20B9A7CE17C86"]
+			id: "1F0E41DE5B0896AA"
+			tasks: [{
+				id: "444D8A2926D2BC6B"
+				item: "vintageimprovements:lathe"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["10033A8AEF2A1790"]
+			id: "5EF20B9A7CE17C86"
+			tasks: [{
+				id: "389F6A3535D5936C"
+				item: "vintageimprovements:spring_coiling_machine"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6505A79EA3C4338D"]
+			id: "10033A8AEF2A1790"
+			tasks: [{
+				id: "3F1C353CAEAF06A4"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1F0E41DE5B0896AA"
+				"7620A7179A0D4C7D"
+				"16BD124A6FD28A6A"
+			]
+			description: ["The microprocessor is a crafting ingredient used for the logic processor, made from iron ingots and steel dust"]
+			id: "6279F718D10A2468"
+			tasks: [{
+				id: "7CA5556C4A558FA2"
+				item: "kubejs:microprocessor"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"36B8B14B39BD2B89"
+				"1A592FC32891C2C0"
+				"6279F718D10A2468"
+			]
+			id: "02A8C0B5BFDA1166"
+			tasks: [{
+				id: "120308614EA6CD16"
+				item: "kubejs:logic_processor"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EF20B9A7CE17C86"]
+			id: "36B8B14B39BD2B89"
+			tasks: [{
+				id: "5849237088C19248"
+				item: "vintageimprovements:vibrating_table"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["74F7EC92ECEEEAAF"]
+			id: "117E86D7A098A1E8"
+			tasks: [{
+				id: "15A52EA75B00813C"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7620A7179A0D4C7D"]
+			id: "74F7EC92ECEEEAAF"
+			tasks: [{
+				id: "246AC67FD9AE3D43"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			id: "6E0B8B466BEB20F2"
+			tasks: [{
+				id: "5F0AD2643F74E9FD"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6E0B8B466BEB20F2"]
+			id: "7620A7179A0D4C7D"
+			tasks: [{
+				id: "61D7CA2DC67326A2"
+				item: "thermal:steel_dust"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["117E86D7A098A1E8"]
+			id: "16BD124A6FD28A6A"
+			tasks: [{
+				id: "69625DD2A7AAFF4B"
+				item: "mekanism:enriched_carbon"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Circuits are a group of custom items specifically made for this modpack"
+				""
+				"They require a decently complicated processing line and are used to make a lot of items and machines in this modpack"
+				""
+				"Most of these quests do not have descriptions as you can figure basically everything out using JEI."
+			]
+			icon: "minecraft:diamond_block"
+			id: "4DE9145D253CF553"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "68755D13BA734DDD"
+				title: "CIRCUITS!!!"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"02A8C0B5BFDA1166"
+				"1A592FC32891C2C0"
+			]
+			description: ["The technology core is an expensive crafting component used for a lot of advanced technology items."]
+			id: "7EE8B37CC9B06BD1"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4B0CAE1779D9B0E6"
+				item: "kubejs:tech_core"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7EE8B37CC9B06BD1"]
+			id: "5B17B274A7DE0293"
+			tasks: [{
+				id: "1A824B661450B79E"
+				item: {
+					Count: 1
+					id: "mekanism:mekasuit_bodyarmor"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "16000000"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7EE8B37CC9B06BD1"]
+			id: "39AF022055ED9A19"
+			tasks: [{
+				id: "2738982ACA6DB73B"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7EE8B37CC9B06BD1"]
+			id: "40AA1D20CC6D45CC"
+			tasks: [{
+				id: "2CB6FB2E96579053"
+				item: "ad_astra:rocket_nose_cone"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1A592FC32891C2C0"
+				"02A8C0B5BFDA1166"
+				"6279F718D10A2468"
+			]
+			id: "55FFDE35A80EEBD5"
+			tasks: [{
+				id: "3E9A636D3ACC7787"
+				item: "computercraft:computer_normal"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55FFDE35A80EEBD5"]
+			id: "46D0C8A4F523D0F2"
+			tasks: [{
+				id: "2E493B3A6764F81D"
+				item: "computercraft:computer_advanced"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+	]
+	title: "Circuits and Cores"
+}

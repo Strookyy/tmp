@@ -1,0 +1,107 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "draconic_evolution"
+	group: "70729788EB8A3F82"
+	id: "38DA12DC80806065"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Congrats! You mined some draconium ore."
+				""
+				"Smelt this to get ingots :D"
+			]
+			id: "0D12635DE6546253"
+			tasks: [{
+				id: "521CA695DC265677"
+				item: "draconicevolution:draconium_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D12635DE6546253"]
+			id: "3B9D89EE5C6FB9F0"
+			tasks: [{
+				id: "42AA595AD4C0BAF1"
+				item: "draconicevolution:draconium_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B9D89EE5C6FB9F0"]
+			description: [
+				"This is a crafting component"
+				""
+				"Try to automate this if you can, you will need a LOT of these"
+			]
+			id: "4A13F7605582913D"
+			tasks: [{
+				id: "238BDA14C7DBF4DF"
+				item: "draconicevolution:draconium_core"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A13F7605582913D"]
+			description: ["This is part of a crafting setup, search up how to make it online as unfortunately I cannot display it in a questbook"]
+			id: "2EA96D40CD45A041"
+			tasks: [{
+				count: 8L
+				id: "30FCA42BCCB983EB"
+				item: "draconicevolution:basic_crafting_injector"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2EA96D40CD45A041"]
+			description: ["Again, part of the crafting setup"]
+			id: "6BCF625150A8233F"
+			tasks: [{
+				id: "277FC279A7BC82FA"
+				item: "draconicevolution:crafting_core"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6BCF625150A8233F"]
+			description: [
+				"These are another crafting component"
+				""
+				"They are VERY expensive"
+			]
+			id: "3EE6681AB085C0BF"
+			tasks: [{
+				id: "3DC8AC27E6B57051"
+				item: "draconicevolution:wyvern_core"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3EE6681AB085C0BF"]
+			description: ["Craft this in the fusion setup!"]
+			id: "1B02F76436403922"
+			tasks: [{
+				id: "6EF0572AA760EFFE"
+				item: "draconicevolution:wyvern_crafting_injector"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "Draconic Evolution"
+}

@@ -1,0 +1,161 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "infinity_cave"
+	group: "5854A28DDC53BD03"
+	id: "3AF4C9D545B85FEF"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Infinity cave is a mod that completely changes cave generation. The infinity cave is a MASSIVE cave system, spanning thousands of blocks. In the cave, new mobs, structures, loot, weapons and more can be found!"
+				""
+				"The cave goes very deep underground, past the usual -64 limit making it very fun to traverse."
+				""
+				"There are many different biomes in the cave all with unique structures and loot."
+				""
+				"There are also new mobs that spawn in the cave that are randomly generated with random effects, strengths and weaknesses!"
+			]
+			id: "3A3589A16B9A405B"
+			tasks: [{
+				id: "490C38A33E9E4D18"
+				title: "Infinity Cave"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A3589A16B9A405B"]
+			description: [
+				"The escape rope will be VERY useful when your in the caves."
+				""
+				"The escape rope is a cheap item that instantly teleports you to the surface if you are underground, making it easy to get out of the Infinity Cave."
+			]
+			id: "605F145F91DD3441"
+			rewards: [{
+				count: 5
+				id: "6650C7ED6FF63B93"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "17A3D43899F09F80"
+				item: {
+					Count: 1
+					id: "gag:escape_rope"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3A3589A16B9A405B"]
+			id: "25480DE9D1FC16C6"
+			rewards: [{
+				count: 5
+				id: "27FEC49FA62060F2"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				biome: "infinity_cave:amethyst_caves"
+				id: "5C1A830014016B13"
+				type: "biome"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A3589A16B9A405B"]
+			id: "76023B0F204AD0DD"
+			rewards: [{
+				count: 5
+				id: "318605168C7A8795"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				biome: "infinity_cave:deeprock_caverns"
+				id: "09C27A642BF35195"
+				type: "biome"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3A3589A16B9A405B"]
+			id: "542C70B7D9E148EF"
+			rewards: [{
+				count: 5
+				id: "15BC12B4F226BF47"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				biome: "infinity_cave:frozen_caves"
+				id: "2C3CDCC21D31063C"
+				type: "biome"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A3589A16B9A405B"]
+			id: "746A23C40F934B86"
+			rewards: [{
+				count: 5
+				id: "6222EEC328FD06E2"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				biome: "infinity_cave:limestone_grotto"
+				id: "3A3E598EA26789A1"
+				type: "biome"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3A3589A16B9A405B"]
+			id: "20869AA3714ED2BF"
+			rewards: [{
+				count: 5
+				id: "70A31FF0E17248B7"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				biome: "infinity_cave:molten_caves"
+				id: "0FD6ACF1E77C1BE4"
+				type: "biome"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3A3589A16B9A405B"]
+			id: "56041CB4666FD86E"
+			rewards: [{
+				count: 5
+				id: "0A6410F2A0C81D6F"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				biome: "infinity_cave:sulfide_caves"
+				id: "48389A7035C7BD0D"
+				type: "biome"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+	]
+	title: "Infinity Cave"
+}

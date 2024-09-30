@@ -1,0 +1,482 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism"
+	group: "148B1DF01C829C23"
+	id: "5FDB3DDAF58206E7"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0F96D291A021CA5D"]
+			id: "0658F2B602ED0488"
+			tasks: [{
+				id: "598E111C65438B77"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0658F2B602ED0488"]
+			id: "719E1944D841B8E0"
+			tasks: [{
+				id: "53513FA84EE482F1"
+				item: "mekanism:enriched_iron"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["719E1944D841B8E0"]
+			id: "52C0754FC02ADBA3"
+			tasks: [{
+				id: "4146AEA91C366C15"
+				item: "thermal:steel_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52C0754FC02ADBA3"]
+			id: "61D8A5CD0D5E3631"
+			tasks: [{
+				id: "13E5F18ED5DA15F9"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"61D8A5CD0D5E3631"
+				"1CB3987BEB206DCD"
+			]
+			id: "6DA2EE85102CC068"
+			tasks: [{
+				id: "2EAA0439E4BB68FE"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "1CB3987BEB206DCD"
+			tasks: [{
+				id: "1D4E8E899936F535"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6DA2EE85102CC068"]
+			id: "4B36AB05B171CF90"
+			tasks: [{
+				id: "0AA0A3CD6504416A"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B36AB05B171CF90"]
+			id: "6EDE1F65D78C5C32"
+			tasks: [{
+				id: "4BA36D70D232997B"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6EDE1F65D78C5C32"
+				"6DA2EE85102CC068"
+			]
+			description: ["The enrichment chamber can be used to double your ore output, put in one diamond ore and get out two diamonds!"]
+			id: "2E9E6E2C6DC1D03E"
+			tasks: [{
+				id: "7C1B9C4946A56C65"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			description: ["The heat generator generates power when it is encased in lava"]
+			id: "0F96D291A021CA5D"
+			tasks: [{
+				id: "4A6A153E26FF4009"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6EDE1F65D78C5C32"
+				"4B36AB05B171CF90"
+			]
+			description: [
+				"The free runners are a jetpack that use power to fly!"
+				""
+				"When you fall using the free runners, you take no damage. It does however consume some energy when you fall!"
+			]
+			id: "0DBE55753CEAC619"
+			tasks: [{
+				id: "72B7C3D404CB317C"
+				item: "mekanism:free_runners"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6EDE1F65D78C5C32"]
+			id: "6CFF82DB43772899"
+			tasks: [{
+				id: "60962621478CF306"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"505346FC7950957F"
+				"51A35FF26CDC0D3D"
+				"7C876A6E536789E0"
+			]
+			id: "1ECB95A0E085DFF3"
+			tasks: [{
+				id: "09C3F3A23A3293D3"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			id: "51A35FF26CDC0D3D"
+			tasks: [{
+				id: "54C04741E4442730"
+				item: "kubejs:logic_processor"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			id: "505346FC7950957F"
+			tasks: [{
+				id: "3E8EB603EC37EB54"
+				item: "kubejs:control_circuit"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			id: "7C876A6E536789E0"
+			tasks: [{
+				id: "4E9E4749717CCDC3"
+				item: "vintageimprovements:laser"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6CFF82DB43772899"
+				"07537CB8AD7B11C0"
+			]
+			description: ["The flamethrower uses hydrogen as fuel and does a LOT of damage"]
+			id: "442C237CF8438BED"
+			tasks: [{
+				id: "6C4F4DFF3130B8F7"
+				item: "mekanism:flamethrower"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7F28C8EF8D63884C"]
+			id: "07537CB8AD7B11C0"
+			tasks: [{
+				id: "3500D08FB2C495C3"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			id: "7F28C8EF8D63884C"
+			tasks: [{
+				id: "5507906C143D5EA3"
+				item: "mekanism:electric_pump"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4B36AB05B171CF90"]
+			id: "53A0A204779343F7"
+			tasks: [{
+				id: "7457BC281B7A535C"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1ECB95A0E085DFF3"
+				"24A5B6EF9177C030"
+			]
+			id: "246804D8A9EBB494"
+			tasks: [{
+				id: "2A9B0C2367C707EE"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"53A0A204779343F7"
+				"1FA47A5FB3ECEFCF"
+			]
+			id: "24A5B6EF9177C030"
+			tasks: [{
+				id: "74DD8A161F94088D"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"24A5B6EF9177C030"
+				"101D101A9EBC9A45"
+			]
+			description: [
+				"The atomic dissasembler is a pickaxe + sword that can be charged with energy"
+				""
+				"It has multiple different modes (by holding N) that can be switched between such as fast, slow, off and normal"
+				""
+				"Additionally it does 10 hearts of damage, 1 shotting creepers "
+			]
+			id: "130390EF852FB08D"
+			tasks: [{
+				id: "09903E38EEF037FD"
+				item: "mekanism:atomic_disassembler"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B36AB05B171CF90"]
+			description: [
+				"The electric bow is a bow that does more damage and is charged with electricity"
+				""
+				"Press N to toggle flame mode"
+			]
+			id: "1DA45C45CED8C858"
+			tasks: [{
+				id: "6E4FCF33BC670089"
+				item: "mekanism:electric_bow"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4B36AB05B171CF90"
+				"6EDE1F65D78C5C32"
+			]
+			description: ["The scuba mask lets you breath underwater, you need a scuba tank filled with oxygen for it to function"]
+			id: "0E2602C0F33C6CA9"
+			tasks: [{
+				id: "32119D802D5BAEFE"
+				item: "mekanism:scuba_mask"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"07537CB8AD7B11C0"
+				"6EDE1F65D78C5C32"
+				"4B36AB05B171CF90"
+				"0E2602C0F33C6CA9"
+			]
+			id: "26DF83F69C1AFD31"
+			tasks: [{
+				id: "0B101EF8A1796928"
+				item: {
+					Count: 1
+					id: "mekanism:scuba_tank"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 24000L
+									gasName: "mekanism:oxygen"
+								}
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"101D101A9EBC9A45"
+				"24A5B6EF9177C030"
+				"50DCA3CA9D546B33"
+			]
+			description: [
+				"The robit is a small companion that contains an anvil, inventory, crafting table, picks up items and smelts items."
+				""
+				"You have to charge it on a chargepad"
+			]
+			id: "144F0D98C3E01E9B"
+			tasks: [{
+				id: "30B4960563DA7FAD"
+				item: "mekanism:robit"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			id: "1FA47A5FB3ECEFCF"
+			tasks: [{
+				id: "27A737677120734F"
+				item: "mekanism:dust_refined_obsidian"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A76AE6FC58064E0"]
+			id: "101D101A9EBC9A45"
+			tasks: [{
+				id: "702B8B712248AB2F"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6CFF82DB43772899"]
+			id: "4A76AE6FC58064E0"
+			tasks: [{
+				id: "3DBF5220E9053DEF"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			id: "50DCA3CA9D546B33"
+			tasks: [{
+				id: "49F0BDDACCEB1943"
+				item: "mekanism:chargepad"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0F96D291A021CA5D"]
+			description: [
+				"The energy cube stores energy"
+				""
+				"The higher the tier the more energy it can store"
+			]
+			id: "6C16FBF918D43DF2"
+			tasks: [{
+				id: "2211A4063C942B0C"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6C16FBF918D43DF2"]
+			id: "7CAA9C8679119E1C"
+			tasks: [{
+				id: "5A328F85FD95A0D2"
+				item: "mekanism:advanced_energy_cube"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7CAA9C8679119E1C"]
+			id: "6C514AD65CFC3EE6"
+			tasks: [{
+				id: "1AF46E34ED3259FD"
+				item: "mekanism:elite_energy_cube"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6C514AD65CFC3EE6"]
+			id: "5206780650CC3A66"
+			tasks: [{
+				id: "70A630AFAD4276FA"
+				item: "mekanism:ultimate_energy_cube"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6EDE1F65D78C5C32"]
+			id: "112D9CD5F5DCD210"
+			tasks: [{
+				id: "548D3199E943CA2B"
+				item: "mekanism:formulaic_assemblicator"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+	]
+	title: "MEKANISM"
+}

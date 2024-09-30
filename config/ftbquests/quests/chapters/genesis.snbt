@@ -1,0 +1,119 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "genesis"
+	group: ""
+	id: "1D0145A9165A0AE7"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to the Temporary Modpack Name Modpack &o(yes that is the actual name)&r"
+				""
+				"This is a kitchensink modpack, meaning there isn't a set out progression for you to do. Basically you can use whatever mods you want!"
+				""
+				"Finish this quest by clicking the checkmark!"
+			]
+			icon: "minecraft:gold_block"
+			id: "6E85728AC7230504"
+			rewards: [{
+				count: 10
+				id: "66C58D23B4714521"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			subtitle: "Temporary Modpack Name Modpack"
+			tasks: [{
+				id: "367E273D9FF40206"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E85728AC7230504"]
+			description: [
+				"This is the questbook, on the side there are many \"chapters\" that explain a bunch of different mechanics and mods!"
+				""
+				"You don't have to do them in order, feel free to drop into any mods at any time."
+				""
+				"In the chapters, there are quests. Quests are completed when something happens, like getting a certain item or checking a checkmark."
+				""
+				"Quests usually have rewards and teach you how to play the game, so it's worth doing them."
+			]
+			icon: "ftbquests:book"
+			id: "3993A71502F21BEF"
+			subtitle: "The center of information"
+			tasks: [{
+				id: "3D326E746246742B"
+				title: "The Questbook"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3993A71502F21BEF"]
+			description: [
+				"&c&lVERY IMPORTANT:&r&r"
+				""
+				"If you open your inventory, on the right side of your screen there will be a huge UI with a bunch of items."
+				""
+				"This is called JEI, and it lets you view crafting recipes for all the items in the game. Use the search bar at the bottom to search up and item."
+				""
+				"If you &lleft click&r on the item it shows you how to make it."
+				""
+				"If you &lright click&r, it shows you what you can make with that item."
+				""
+				"If you hover over an item in your inventory and press R it shows you how to make it."
+				""
+				"If you hover over an item and press U it shows you what you can make with it."
+				""
+				"JEI is gonna be your best friend and you will constantly be using it, as crafting recipes can be quite complicated in hyper-modded minecraft."
+			]
+			icon: "minecraft:crafting_table"
+			id: "6CC346E4E3419ED1"
+			subtitle: "The Center Of Crafting"
+			tasks: [{
+				id: "2B0B5F751210C114"
+				title: "JEI"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CC346E4E3419ED1"]
+			description: [
+				"Good luck out there, have fun, and protect yourself"
+				""
+				"Finishing this quest unlocks the rest of the chapters!"
+			]
+			id: "07C9E36BB5386E66"
+			rewards: [
+				{
+					count: 10
+					id: "1FEBAB22E3C682D1"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 15
+					id: "52D250E6E97B8088"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2E65894F2F953F1C"
+				title: "Genesis"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+	]
+	title: "Genesis"
+}

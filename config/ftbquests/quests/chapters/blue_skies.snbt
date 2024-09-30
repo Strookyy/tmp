@@ -1,0 +1,533 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "blue_skies"
+	group: "5854A28DDC53BD03"
+	id: "37F8365ED7D49D16"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Blue skies is an exploration mod that adds 2 new dimensions to the game. In these dimensions you can find bosses, structures, mobs, items and so much more!"]
+			icon: "rechiseled:diamond_block_rhombuses"
+			id: "41D6438B23FC10EC"
+			tasks: [{
+				id: "309766A94293869D"
+				title: "Mr Blue Sky"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["41D6438B23FC10EC"]
+			description: [
+				"Find a gatekeepers house in the overworld, these structures spawn above ground made out of stone or wood."
+				""
+				"In the house, you will find the gatekeeper, a villager that sells special items!"
+				""
+				"The zeal lighter is one of these items, and will let you light the portals to the Everbright and Everdawn dimensions!"
+			]
+			id: "2D27ED08B64B46B6"
+			tasks: [{
+				id: "06449262B0E8014D"
+				item: {
+					Count: 1
+					id: "blue_skies:zeal_lighter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D27ED08B64B46B6"]
+			description: [
+				"The Everbright is a frosty dimension cursed with an eternal day."
+				""
+				"Here, you'll find new dimensions, plant life, structures, villagers, bosses, ores, items, block and more!"
+				""
+				"Be careful though, &a&lyour weapons and tools from the overworld won't work here.&r&r This means you are very vunerable to enemies, and the Everbright is an extremely dangerous place."
+			]
+			id: "3C024F24A376A1E7"
+			tasks: [{
+				dimension: "blue_skies:everbright"
+				id: "4FCA3144683C12B5"
+				type: "dimension"
+			}]
+			title: "Everbright"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D27ED08B64B46B6"]
+			description: ["Diopsite is one of the two strongest ores in Blue Skies. It is equivalent to Diamond in the overworld but slower and more hard hitting. Diopsite is found in both dimensions."]
+			id: "13F20C043017B392"
+			tasks: [{
+				id: "7C8EB256FA9D4FDE"
+				item: "blue_skies:diopside_gem"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2D27ED08B64B46B6"]
+			description: ["Aquite is the Iron equivalent in Blue Skies. It is found in both dimensions and used for Early to mid game armour"]
+			id: "2196B4295989003C"
+			tasks: [{
+				id: "133FF8C8BCDC3A09"
+				item: "blue_skies:raw_aquite"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2D27ED08B64B46B6"]
+			description: ["Pyrope is like gold as in the tools made with it are very fast but low durability. It is found in both dimensions"]
+			id: "5478D4E7A7C15AB2"
+			tasks: [{
+				id: "0B28850244EFB078"
+				item: "blue_skies:pyrope_gem"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D27ED08B64B46B6"]
+			description: ["Moonstone is like a better version of coal. It's torches can be used underwater and it's used for smelting items. It can be found in both dimensions"]
+			id: "60E3BE802D6AC06C"
+			tasks: [{
+				id: "66F1F11EBAAA40BA"
+				item: "blue_skies:moonstone"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3C024F24A376A1E7"]
+			description: ["Falsite is similar to diopside but much quicker and lighter hitting. It is much closer to diamond in the overworld and can be used to make quite good tools!"]
+			id: "02B293F3B008C0E7"
+			tasks: [{
+				id: "32ECB32B10B8E4AD"
+				item: "blue_skies:raw_falsite"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C024F24A376A1E7"]
+			description: ["Ventium is similar to iron and is used to make small utility items such as shears, buckets and toolboxes."]
+			id: "0ED673FA5C47CEE3"
+			tasks: [{
+				id: "4F10E701898B2FC5"
+				item: "blue_skies:raw_ventium"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C024F24A376A1E7"]
+			description: ["Spears are a new type of weapon in Blue Skies that function the same way as tridents! You can even add the same enchantments as tridents!"]
+			id: "58369D97C615FEE8"
+			tasks: [{
+				id: "64B85223D6676856"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "blue_skies:soulbound_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:comet_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:maple_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:dusk_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:lunar_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:frostbright_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:starlit_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:bluebright_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Spears!"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C024F24A376A1E7"]
+			description: [
+				"The blinding dungeon can be found in the Everbright and Everdawn, but the bosses change depending on the dimension."
+				""
+				"In the Everbright, The boss is the summoner. In the dungeon you will have to find 4 keys. Once you find these keys right click the key stone at the top of the dungeon to be teleported to the boss room."
+				""
+				"The summoner teleports around, summons golem, strikes lightning and throws spears. It has 350 health, so gear up and be careful."
+			]
+			id: "10A854E52506A3E5"
+			rewards: [{
+				count: 5
+				id: "7C497EC805969768"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "01F86C982C41C29D"
+				structure: "blue_skies:everbright_blinding_dungeon"
+				type: "structure"
+			}]
+			title: "The Blinding Dungeon"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["10A854E52506A3E5"]
+			description: ["Defeat the summoner!"]
+			id: "107EA50647501334"
+			rewards: [{
+				count: 3
+				id: "20D910AFEB15AA5C"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "blue_skies:summoner"
+				id: "1A437DEFD283EFFB"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3C024F24A376A1E7"]
+			description: [
+				"The nature dungeon is a MASSIVE dungeon found in the everbright."
+				""
+				"The nature dungeon is made of 4 floors, with a key found on each floor. Use these keys on the keystone to begin the boss battle."
+				""
+				"The Starlit Crusher is the boss of the Nature Dungeon. It spawns walls to protect itself, grows deadly roots, spawns spewters and much more. It has 500 Health, so gear up well!"
+			]
+			id: "3EA1C94BC9126FD8"
+			rewards: [{
+				count: 32
+				id: "3015723F35F288CC"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B763944FD2AC0BC"
+				structure: "blue_skies:nature_dungeon"
+				type: "structure"
+			}]
+			title: "The Nature Dungeon"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2D27ED08B64B46B6"]
+			id: "116BD938A25986F0"
+			tasks: [{
+				dimension: "blue_skies:everdawn"
+				id: "4E5F18F82859517D"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["116BD938A25986F0"]
+			description: ["Spears are a new type of weapon in Blue Skies that function the same way as tridents! You can even add the same enchantments as tridents!"]
+			id: "163690C7232CFFE4"
+			tasks: [{
+				id: "27D26AFD63554DD3"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "blue_skies:soulbound_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:comet_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:maple_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:dusk_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:lunar_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:frostbright_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:starlit_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:bluebright_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Spears!"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["116BD938A25986F0"]
+			description: ["Horizonite is a very hot metal and any tools made with it will instantly smelt ores!"]
+			id: "25FFD55A3E7DD083"
+			tasks: [{
+				id: "5183A13A8C8BE7CC"
+				item: "blue_skies:raw_horizonite"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["116BD938A25986F0"]
+			description: [
+				"The poison dungeon looks like a tree from the surface."
+				""
+				"You will have to find 4 keys to activate the keystone and fight the boss of the dungeon, the Arachnarch."
+				""
+				"The Arachnarch is a giant spider that will climb on the ceiling. The boss will jump towards you to try and kill you and has a lot of health. Make sure to gear up."
+			]
+			id: "6DE6B87B7D6BA9A6"
+			rewards: [
+				{
+					count: 3
+					id: "1D9A7EBDEDA0E677"
+					item: "minecraft:gold_block"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2A6B52FA70E6DD5B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "396E935EC67FC7CE"
+				structure: "blue_skies:poison_dungeon"
+				type: "structure"
+			}]
+			title: "The Poison Dungeon"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3EA1C94BC9126FD8"]
+			id: "51F99D7BD1612135"
+			rewards: [
+				{
+					id: "617D0B47628D0E12"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "20585D6B72FE54C6"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+				{
+					id: "319C7E81F0768C12"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "blue_skies:starlit_crusher"
+				id: "103980CB039B3840"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6DE6B87B7D6BA9A6"]
+			id: "732218926CC47310"
+			rewards: [
+				{
+					count: 10
+					id: "29FAA7E86A468CDC"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7ABEE2BD192558FE"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					id: "2589318C62508236"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "blue_skies:arachnarch"
+				id: "08558BEFEC4300B0"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["116BD938A25986F0"]
+			description: [
+				"The blinding dungeon in the Everdawn is the same as in the Everbright, but with a different boss."
+				""
+				"Find 4 keys to unlock the keystone at the top of the dungeon. You will then be teleported to the boss room where you will fight the Alchemist."
+				""
+				"The Alchemist will spawn potions, blind you, launch arrows, throw spikes, regenerate, and has a lot of health. Make sure to gear up!"
+			]
+			id: "045AD12D7205461C"
+			rewards: [{
+				count: 5
+				id: "031C0002E3169CB5"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C21B940E927E4DE"
+				structure: "blue_skies:everdawn_blinding_dungeon"
+				type: "structure"
+			}]
+			title: "The Blinding Dungeon"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["045AD12D7205461C"]
+			id: "3AFF0E96945D2D0D"
+			rewards: [
+				{
+					count: 10
+					id: "1020ACEB7567452B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "68939E1F7AA9C621"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					id: "524221DEDF03DD70"
+					item: "kubejs:tech_core"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "blue_skies:alchemist"
+				id: "5B391EFA20BCD59A"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+	]
+	title: "Blue Skies"
+}

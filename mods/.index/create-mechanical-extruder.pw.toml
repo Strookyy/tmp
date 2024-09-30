@@ -1,0 +1,13 @@
+filename = 'create_mechanical_extruder-1.20.1-1.6.2.h-48.jar'
+name = 'Create Mechanical Extruder'
+side = 'both'
+
+[download]
+hash = 'ead9e7baeff7c3dd7990950b7827c314f4346c11a13f2135283f1e7dacc35a83567c56832290488c0ecb4eb203435a16aef287bba47d374cc741810d20cb4d47'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/hGAlcCDJ/versions/pFNckCzq/create_mechanical_extruder-1.20.1-1.6.2.h-48.jar'
+
+[update.modrinth]
+mod-id = 'hGAlcCDJ'
+version = 'pFNckCzq'

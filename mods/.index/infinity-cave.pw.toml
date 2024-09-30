@@ -1,0 +1,13 @@
+filename = 'infinity_cave-0.4-1.20.1-FORGE.jar'
+name = 'Infinity Cave'
+side = 'server'
+
+[download]
+hash = '955eb7a96ae9f3795e4fb134220213579c46ddadd22427e797b961265a95a19bcdd9584bf8ed4e7c3506a3c42b6dcee8cbdd975231159822c6353d4f7ffb8ee2'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/DEq97NAA/versions/Lg0gTgfj/infinity_cave-0.4-1.20.1-FORGE.jar'
+
+[update.modrinth]
+mod-id = 'DEq97NAA'
+version = 'Lg0gTgfj'

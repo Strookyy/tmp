@@ -1,0 +1,120 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ores"
+	group: "27CBE5A5303CC7BC"
+	id: "45E9A412EF616416"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["07C9E36BB5386E66"]
+			description: ["Osmium is used for the Mekanism mod and lets you create machines!"]
+			id: "35575564DA33F44F"
+			tasks: [{
+				id: "2CBD8AC4A1AB5D42"
+				item: "mekanism:raw_osmium"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["07C9E36BB5386E66"]
+			description: ["Uranium is used for nuclear reactors, a lategame power source in Mekanism!"]
+			id: "74F99FE16C923BE0"
+			tasks: [{
+				id: "6496C9E032C684B9"
+				item: "mekanism:raw_uranium"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["07C9E36BB5386E66"]
+			description: ["Lead is used to make machines in practically all of the tech mods!"]
+			id: "232BB208BEFBC835"
+			tasks: [{
+				id: "1E53B8E114F2B88C"
+				item: "thermal:raw_lead"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["07C9E36BB5386E66"]
+			description: ["Nickel is used for the Thermal Series mod, and is used to make machines!"]
+			id: "7B8CAB2A05819AE6"
+			tasks: [{
+				id: "5DF34E70C9D751E6"
+				item: "thermal:raw_nickel"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["07C9E36BB5386E66"]
+			description: ["Tin is used for the Thermal Series and Mekanism mods to make machines!"]
+			id: "6631C68807801D2B"
+			tasks: [{
+				id: "195367E6A7324766"
+				item: "thermal:raw_tin"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["07C9E36BB5386E66"]
+			description: ["Silver is used by the Thermal Series mod to make machines!"]
+			id: "79BD91BABE5D9AD1"
+			tasks: [{
+				id: "1C2B4345E1922BA7"
+				item: "thermal:raw_silver"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["07C9E36BB5386E66"]
+			description: ["Fluorite is used to make Hydrofluoric Acid, part of the Uranium Enrinchment process!"]
+			id: "113CBA57F5560EAA"
+			tasks: [{
+				id: "207499A0D0898C35"
+				item: "mekanism:fluorite_gem"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["07C9E36BB5386E66"]
+			description: ["Draconium is a lategame resource used in the Draconic Evolution mod, and is used to make some of the most powerful items in the game!"]
+			id: "680938588E927604"
+			tasks: [{
+				id: "2D17FC5CCC44C52B"
+				item: "draconicevolution:overworld_draconium_ore"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["07C9E36BB5386E66"]
+			description: ["Zinc is the main material used in the Create mod, used to make machines!"]
+			id: "1436C931A6C44E21"
+			tasks: [{
+				id: "7767C65C854A5C57"
+				item: "create:raw_zinc"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+	]
+	title: "Ores"
+}
